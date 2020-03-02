@@ -18,4 +18,19 @@ python3 app.py
  
   Copy the local address and paste it on Any Browser 
   
-  ![Run] 
+  # Load
+  ![Load](https://github.com/Kunal614/STRINGIFY/blob/master/Load.jpeg) 
+  
+  # Run
+  ![Run](https://github.com/Kunal614/STRINGIFY/blob/master/Run.jpeg)
+  
+  # Output
+  ![Output](https://github.com/Kunal614/STRINGIFY/blob/master/Output.jpeg)
+  
+  # Technologies used
+
+ * Python3
+ * Flask
+ * PIL (Python Library)
+ * Tesseract
+ * bootstrap
