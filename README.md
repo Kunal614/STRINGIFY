@@ -12,7 +12,7 @@ command - pip3 install Flask
 command - pip3 install Pillow
 
 # Install Tesseract
-pip install pytesseract
+command  - pip3 install pytesseract
 
 Do clone of this repo and put in your directory , then in terminal open the directory and write
 python3 app.py
