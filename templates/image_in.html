@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <title>
+        Give image input
+    </title>
+    <style>
+        body {
+            background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0PDQ0NDQ0NDQ8NDQ0NDQ0NDQ8NDQ0NFREWFhURFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAKgBLAMBIgACEQEDEQH/xAAZAAEBAQEBAQAAAAAAAAAAAAAAAQIDBAf/xAAeEAEBAQEBAQADAQEAAAAAAAAAARECEiFBUXExA//EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD4cKgLFRYCopgIFWAirhIBI0SLIA1hI1IDGNct+U84DULDlvAcOuWXovLl3yDCyolBoqagCKyBUVAAAFQBQAAAQVAYAAWBYCxWY0AjWAC4SNQCRqQxqQCRrCRuQEnLXlqRryDjOc/jpOW/LM+fPwCWMdcu7PXIPL1w52PT1y5dcg5YLYgIlaKDAtiACgIAAqAKIAogDAALFSLATGuQwGlkTmtwCRZFkbkBmNyE5bkBJGsXmN+QZa5qzkvINcp3wcxuA4TZXSNdcOeZ/AOuXHqO+sdQHn6jn1HfqOdByGuoyCItABFBMRpLAQgYCgAgoDkACxqMxYDcVmNQDG+ahIDrI3zGeK6yAs5WcrFgLzFz6kdJQPwvP2KQDGPOX+usTrgGKzSs9Az18Z9rWKCdMVpmgxY52OtYsBlD/AAAFQiglSKlABQQAHNFAIADUblYWA7cr5Y5deaCR246crF5B6Y0489OnPQNyNRmNwFlaYXQbkZ6rUpaDl1HHp6K49gw51qpQYqLWAKy1WASxh0ZsBFxCAKlSUGqlVASKlAUAHIAAFBYqRYDUrpHKNyg7cdL1y5x24ugnHTpIx1yvFB15tdOaxKtgOkLHOd1r0DempKzQavTn1GrWOqDj0x6denn7+A3WKk6KCUSoBolTQEWoC6lACVdYXQWpDUoNCUBgAAAFjcc43KDSxJWoDUrpy5tSg782U65c+enWUE46dJWLNJQddSzGd/Szr9gs7/bWudiesB0rnaembQLXPuNVm0HC/CVr/pHIHRmpoAJQDRCgAAlFZBQQFlE1QZAABQRZUAbldOa4xvmg7RYzzWoCz46c1zlXcB2iuc6a0FLWdNBdW3WNT0BZiez0x0DprNY9GgVz6jdrNBzXTqMg0yqAtNZUAEBdSkUEQACUQBUAUAFEUEaiAOnNdZXCVvnoHVdY0BvWvTnqaDr6S1z9Gg6azWfSaDXpPTOpoNVnTUoL6NZpoFZqpQTShABAF1AAVEBaCAAACKAACmoA1oigNSsgOkrWuUq6DpqazqaDWms6aDWms6mg3qWs6aC6agCommgqIAAgKIAogAAAAAACKgCgAAAGgC6aAGmgC6aAGmgCaaAGmgBpoAIAAAAgAAAAAAAAAAD/9k=");
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        
+        #image.hover {
+            font-size: 200px;
+            width: 150px;
+        }
+        
+        .button {
+            background-color: #4CAF50;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: px;
+            position: absolute;
+            left: 2%;
+            top: 450%;
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <center>
+        <h1 style="color:antiquewhite; padding:10px">
+            STRINGFY
+
+        </h1>
+        <small style="color:lightskyblue; font-family: serif;">.....Image To String Converter.....</small>
+    </center>
+    <form action="{{url_for('main')}}" method="POST" enctype="multipart/form-data">
+
+
+        <div class="custom-file">
+            <center> <label style="color:aquamarine;  position: absolute; left:40%;top:100%">Upload image</label></center>
+            <input type="file" name="image" value="Select image.." id="image" style="border: 10px solid whitesmoke; position: absolute; left:30%; width:600px;top:200%;" class="input-group-text">
+
+
+            <input type="submit" class="button " value="Upload">
+        </div>
+    </form>
+    {%block content%}{%endblock%}
+</body>
+
+</html>
